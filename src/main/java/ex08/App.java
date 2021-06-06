@@ -1,6 +1,10 @@
 package ex08;
 
 /*
+
+*  UCF COP3330 Summer 2021 Assignment 1 Solution
+*  Copyright 2021 Jeyler Zabala
+
 Exercise 8 - Pizza Party
 Division isn’t always exact,
 and sometimes you’ll write programs that will need to deal with the leftovers as a whole number instead of a decimal.
@@ -38,11 +42,9 @@ public class App {
         System.out.print("How many people? ");
         people = sc.nextInt();
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.print("How many pizzas do you have? ");
         pizzas = sc.nextInt();
 
-        Scanner sc3 = new Scanner(System.in);
         System.out.print("How many slices per pizza? ");
         slices = sc.nextInt();
 
@@ -60,3 +62,4 @@ public class App {
         System.out.println(output2);
     }
 }
+
