@@ -27,5 +27,36 @@ Create a variant of the program that prompts for the number of people and the nu
 and calculate how many full pizzas you need to purchase.
 */
 
+import java.util.Scanner;
+
 public class App {
+    public static void main(String[] args) {
+
+        int people, pizzas, slices, totalSlices, pieces, leftovers;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many people? ");
+        people = sc.nextInt();
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("How many pizzas do you have? ");
+        pizzas = sc.nextInt();
+
+        Scanner sc3 = new Scanner(System.in);
+        System.out.print("How many slices per pizza? ");
+        slices = sc.nextInt();
+
+        totalSlices = pizzas * slices;
+        pieces = totalSlices / people;
+        leftovers = totalSlices % people ;
+
+        String output = String.format("%s people with %s pizzas (%s slices)", people, pizzas, totalSlices );
+        System.out.println(output);
+
+        String output1 = String.format("Each person gets %s pieces of pizza.", pieces);
+        System.out.println(output1);
+
+        String output2 = String.format("There are %s leftover pieces.", leftovers);
+        System.out.println(output2);
+    }
 }
